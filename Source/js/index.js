@@ -5,6 +5,8 @@ document.getElementById("showPassword").addEventListener("change"), function() {
     passwordInput.type = this.checked ? "text" : "password";
 } */
 
+/* ///SLIDER/// */
+
 let count = 1;
 document.getElementById("radio1").checked = true;
 
@@ -21,3 +23,29 @@ function nextImage () {
 
     document.getElementById("radio"+count).checked = true;
 }
+
+/*---------------*/
+
+
+
+
+
+/* ///TAG HOVER/// */
+
+function showContent(contentId) {
+    const content = document.getElementById(contentId);
+    content.style.visibility = "visible";
+    content.style.opacity = "1";
+}
+
+function hideContent(contentId) {
+    const content = document.getElementById(contentId);
+    content.style.visibility = "hidden";
+    content.style.opacity = "0";
+}
+
+/*------------------*/
+
+
+
+
