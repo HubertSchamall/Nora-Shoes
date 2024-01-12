@@ -1,0 +1,806 @@
+* {
+    font-family: sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    background-color: #4b4949;
+    display: inline-block;
+    padding: 15px 20px;
+    align-items: center;
+    margin: 0;
+}
+
+
+
+
+
+/* ///LOGO/// */
+
+.link-logo {
+    width: 0px;
+    height: 55px;
+    cursor: pointer;
+    outline: none;
+}
+
+.logo {
+    width: 240px;
+    height: 50px;
+    position: relative;
+    left: 20px;
+}
+
+/* ---------------- */
+
+
+
+
+/* ///CAIXA DE PESQUISA/// */
+
+.search-box {
+    position: relative;
+    height: 30px;
+    width: 600px;
+    left: 290px;
+    bottom: 40px;
+    border-bottom: 2px solid #f4c1b7;
+}
+
+#textsearch {
+    box-sizing: border-box;
+    width: 550px;
+    height: 30px;
+    border-color: transparent;
+    outline: 0;
+    background: 0 0;
+    color: #f4c1b7;
+    font-weight: 200;
+    font-size: 14px;
+
+}
+
+#textsearch::placeholder {
+    color: #f4c1b7;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+#buttonsearch {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    left: 20px;
+    bottom: 2px;
+}
+
+/* ----------------- */
+
+
+
+
+/* ///ABAS HEADER/// */
+
+.header-buttons {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    font-weight: 700;
+    color: #f4c1b7;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-left: 30px;
+    left: -20px;
+    bottom: 5px;
+    outline: 0;
+    opacity: 1;
+    height: 10px;
+    display: inline;
+}
+
+
+#home-button:hover,
+#news-button:hover,
+#shoes-button:hover,
+#collections-button:hover,
+#outlet-button:hover,
+#sale-button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* ------------------- */
+
+
+
+
+/* ///BOTÃO DE LOGIN E REGISTRO/// */
+
+.popup-open {
+    display: inline;
+    position: relative;
+    bottom: 2px;
+    left: 400px;
+}
+
+.btn,.btn-secondary{
+    border-radius: 0;
+}
+
+.btn {
+    color: #f4c1b7;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.btn::after {
+    content: "";
+    display: block;
+    height: 3.5px;
+    width: 0;
+    background-color: #f4c1b7;
+    transition: width 0.3s ease-in-out;
+    position: relative;
+    transform: translateX(-50%);
+    left: 25px;
+}
+
+.btn:hover::after {
+    width: 55px;
+    left: 25px;
+}
+
+.btn-secondary {
+    border-radius: 0;
+    border: none;
+    width: 80px;
+    height: 30px;
+}
+
+.btn-secondary:hover {
+    border-radius: 0;
+    color: #f4c1b7;
+    opacity: 0.8;
+}
+
+.btn-secondary:active {
+    opacity: 0.6;
+}
+
+#buttonLog {
+    background-color: transparent;
+    color: #f4c1b7;
+    text-align: justify;
+    bottom: 10px;
+    height: 45px;
+}
+
+.p1 {
+    margin: 0;
+    height: 18px;
+
+}
+
+.p2 {
+    margin: 0;
+    font-weight: 100;
+    font-size: small;
+}
+
+/* ------------------ */
+
+
+
+
+/* ///BOTÃO DE FAVORITO/// */
+
+.favorite-link {
+    cursor: pointer;
+    margin-bottom: 0;
+    position: absolute;
+    left: 1100px;
+    height: 35px;
+    justify-content: center;
+}
+
+.favorite-itens {
+    width: 30px;
+    height: 28px;
+    bottom: 1px;
+    position: relative;
+}
+
+.favorite-link::after {
+    content: "";
+    display: block;
+    height: 3.5px;
+    width: 0;
+    background-color: #f4c1b7;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+.favorite-link:hover::after {
+    width: 40px;
+  }
+
+.favorite-link:hover {
+    opacity: 0.8;
+}
+
+.favorite-link:active {
+    opacity: 0.6;
+}
+
+/* ---------------------- */
+
+
+
+
+/* ///BOTÃO CARRINHO/// */
+
+.shoppingcart-link {
+    cursor: pointer;
+    margin-bottom: 0;
+    position: absolute;
+    left: 1150px;
+    height: 35px;
+    justify-content: center;
+}
+
+.shopping-itens {
+    width: 30px;
+    height: 32px;
+    position: relative;
+    bottom: 5px;
+}
+
+.shoppingcart-link::after {
+    content: "";
+    display: absolute;
+    height: 3.5px;
+    width: 0;
+    background-color: #f4c1b7;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+.shoppingcart-link:hover::after {
+    width: 40px;
+  }
+
+.shoppingcart-link:hover {
+    opacity: 0.8;
+}
+
+.shoppingcart-link:active {
+    opacity: 0.6;
+}
+
+/*--------------------------*/
+
+
+
+
+/* ///JANELA POPUP LOGIN E REGISTRO/// */
+
+.popup-menu{
+    background-color: #4b4949;
+    width: 800px;
+    height: 450px;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 380px;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    display: none;
+}
+
+#barlog-reg {
+    color: #f4c1b7;
+    font-size: 50px;
+    font-weight: lighter;
+    position: absolute;
+    left: 175px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.log-change {
+    width: 100px;
+    background-color: transparent;
+    position: absolute;
+    left: 70px;
+    top: 40px;
+    border: none;
+    font-size: 30px;
+    color: #f4c1b7;
+}
+
+.log-change::after {
+    content: "";
+    display: block;
+    height: 3.5px;
+    width: 0;
+    background-color: #f4c1b7;
+    transition: width 0.3s ease-in-out;
+    position: relative;
+    transform: translateX(-50%);
+    left: 51px;
+}
+
+.log-change:hover::after {
+    width: 90px;
+    left: 51px;
+}
+
+.reg-change {
+    width: 100px;
+    background-color: transparent;
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border: none;
+    width: 130px;
+    font-size: 30px;
+    color: #f4c1b7;
+}
+
+.reg-change::after {
+    content: "";
+    display: block;
+    height: 3.5px;
+    width: 0;
+    background-color: #f4c1b7;
+    transition: width 0.3s ease-in-out;
+    position: relative;
+    transform: translateX(-50%);
+    left: 67px;
+}
+
+.reg-change:hover::after {
+    width: 120px;
+    left: 67px;
+}
+
+.log-change:hover, .reg-change:hover {
+    opacity: 0.8;
+
+}
+
+.log-change:active, .reg-change:active {
+    opacity: 0.6;
+}
+
+.popup-log-div1 {
+    position: absolute;
+    top: 110px;
+    left: 50px;
+    width: 300px;
+    height: 30px;
+}
+
+.label-log1 {
+    color: white;
+}
+
+.popup-log1 {
+    outline: 0;
+    width: 300px;
+    position: absolute;
+    background: 0 0;
+    border-color: transparent;
+    color: #f4c1b7;
+}
+
+.popup-log1::placeholder {
+    color: #f4c1b7;
+}
+
+.popup-log-div2 {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    width: 300px;
+    height: 30px;
+}
+
+.label-log2 {
+    color: white;
+}
+
+.popup-log2 {
+    outline: 0;
+    width: 300px;
+    position: absolute;
+    background: 0 0;
+    border-color: transparent;
+    color: #f4c1b7;
+}
+
+.popup-log2::placeholder {
+    color: #f4c1b7;
+}
+
+#show-password {
+    position: absolute;
+    left: 51px;
+    top: 201px;
+    border: 1px solid;
+    border-radius: 50%;
+    outline: none;
+    transform: scale(1.2);
+}
+
+.password-label {
+    position: absolute;
+    left: 70px;
+    top: 196px;
+    color: black;
+    position: absolute;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+#email-promo-checkbox {
+    position: absolute;
+    left: 51px;
+    top: 235px;
+    transform: scale(1.2);
+}
+
+.promo-label {
+    position: absolute;
+    left: 70px;
+    top: 230px;
+    color: black;
+    position: absolute;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.btnsubmit {
+    position: relative;
+    top: 280px;
+    left: 150px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #ee826d;
+    width: 100px;
+    height: 30px;
+}
+
+.btnsubmit:hover {
+    box-shadow: 1px 1px 1px 1px #f4c1b7;
+}
+
+.btnsubmit:active {
+    opacity: 0.8;
+}
+
+.forgotpasslink {
+    text-decoration: none;
+    position: relative;
+    top: 340px;
+    left: 50px;
+    cursor: pointer;
+    color: black;
+    position: absolute;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.forgotpasslink:hover {
+    text-decoration-line: underline;
+}
+
+.forgotpasslink:active {
+    opacity: 0.6;
+}
+
+.form-log {
+    border-right: 4px solid #f4c1b7;
+    width: 410px;
+    height: 450px;
+}
+
+#norah-logo-popup {
+    position: absolute;
+    width: 45%;
+    height: auto;
+    left: 425px;
+    top: 38px;
+}
+
+/* ------------------ */
+
+
+
+
+/* ///CUPOM DE DESCONTO/// */
+
+#coupon-div {
+    background-color: #ee826d;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+@keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+      color: black; 
+    }
+  }
+
+#coupon {
+    display: inline-block;
+    position: relative;
+    top: 7px;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    animation: blink 1s infinite;
+    text-decoration: none;
+    color: rgba(198, 14, 1, 0.993);
+}
+
+/*----------------------*/
+
+
+
+
+main {
+    height: 1000px;
+}
+
+/* ///SLIDER BANNER/// */
+
+.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    height: 400px;
+    transition: 1s;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+}
+
+/* Manual navigation */
+
+.manual-navigation {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 530px;
+}
+
+.manual-btn {
+    border: 1.5px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    width: 15px;
+    height: 15px;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 35px;
+}
+
+.manual-btn:hover {
+    background-color: white;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+/*Prev-next Buttons*/
+.slide-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#next-btn, #prev-btn {
+    cursor: pointer;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+#next-btn img, #prev-btn img {
+    width: 30px;
+}
+
+#next-btn img{
+    position: relative;
+    right: 10px;
+}
+
+#prev-btn img{
+    position: relative;
+    left: 10px
+}
+
+#next-btn:focus, #prev-btn:focus {
+    outline: none;
+}
+
+/* Automatic navigation */
+
+.navigation-auto div{
+    border: 1.9px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    width: 15px;
+    height: 15px;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 100%;
+    top: 530px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 35px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: white;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: white;
+}
+
+/*---------------------*/
+
+
+
+
+
+/* ///NUMBER FILTER/// */
+
+.number-filter {
+    background-color: #4b4949;
+    color: #ee826d;
+    height: 40px;
+    width: 100%;
+    padding: 22px;
+    justify-content: center;
+    letter-spacing: 4px;
+    font-family: "Josefin Sans", Arial, sans-serif;
+}
+
+.number-filter-text {
+    background-color: transparent;
+    width: 230px;
+    position: relative;
+    bottom: 14px;
+    left: 225px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.strong-numberFilter {
+    position: relative;
+    left: 20px;
+}
+
+.number-filter-numbers {
+    background-color: transparent;
+    width: 40%;
+    position: relative;
+    left: 600px;
+    bottom: 47px;
+}
+
+.number-filterItem {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    list-style: none;
+    align-items: center;
+    color: #ee826d;
+    position: relative;
+    padding: 5px 3px 5px 6px;
+    cursor: pointer;
+}
+
+.number-filterItem:not(:last-child) {
+    margin-right: 25px;
+}
+
+.number-filterItem:hover {
+    color: black;
+    background-color: #ee826d;
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Nora Shoes</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+
+
+        <!--///LOGO*///-->
+        <a class="link-logo" href="#">
+            <img src="./Source/img/logo-header.png" alt="nora-shoes" class="logo" />
+        </a>
+        <!--------------->
+
+
+        <!--///CAIXA DE PESQUISA///-->
+        <div class="search-box">
+            <input type="text" id="textsearch" placeholder="Search..." />
+            <img src="./Source/img/lupa.png" id="buttonsearch" alt="Search">
+        </div>
+        <!--------------------------->
+
+
+        <!--///ABAS HEADER///-->
+        <nav class="header-buttons">
+            <button id="home-button" class="header-buttons">Home</button>
+            <button id="news-button" class="header-buttons">News</button>
+            <button id="shoes-button" class="header-buttons">Shoes</button>
+            <button id="collections-button" class="header-buttons">Collections</button>
+            <button id="outlet-button" class="header-buttons">Outlet</button>
+            <button id="sale-button" class="header-buttons">Sale</button>
+        </nav>
+        <!--------------------->
+
+
+        <!--///BOTÃO DE LOGIN E REGISTRO///-->
+        <div class="popup-open">
+            <button class="btn btn-secondary" type="button" id="buttonLog" data-bs-toggle="popup"
+                    aria-haspopup="true" aria-expanded="false" onclick="buttonLog()">
+                <p class="p1">Login</p>
+                <p class="p2">Register</p>
+            </button>
+        </div>
+        <!------------------------------------>
+
+
+        <!--///BOTÃO DE FAVORITO///-->
+        <a class="favorite-link" href="#">
+            <img src="./Source/img/coração.png" class="favorite-itens" alt="hearth">
+        </a>
+        <!--------------------------->
+
+
+        <!--///BOTÃO DO CARRINHO///-->
+        <a class="shoppingcart-link" href="#">
+            <img src="./Source/img/carrinho.png" class="shopping-itens" alt="bag">
+        </a>
+        <!--------------------------->
+
+
+        <!--///JANELA POPUP LOGIN E REGISTRO///-->
+            <div class="popup-menu" aria-labelledby="triggerId" id="popupMenu">
+
+                <div class="change-logreg">
+                    <button class="log-change">Log in</button>
+                    <p id="barlog-reg">|</p>
+                    <button class="reg-change">Register</button>
+                </div>
+
+                <form class="form-log">
+                    <div class="popup-log-div1">
+                        <label for="email" class="label-log1"></label>
+                        <input class="popup-log1" type="email" id="email" placeholder="E-mail" required>
+                    </div>
+
+                    <div class="popup-log-div2">
+                        <label for="password" class="label-log2"></label>
+                        <input class="popup-log2" type="password" id="password" placeholder="Password" required>
+                    </div>
+
+                    <input id="show-password" type="checkbox" name="passwordcheckbox">
+                    <label for="passwordcheckbox" class="password-label">Show password</label>
+
+                    <input id="email-promo-checkbox" type="checkbox" name="promocheckbox">
+                    <label for="promocheckbox" class="promo-label">Do you want to receive promo e-mails?</label>
+
+                    <button type="submit" class="btnsubmit">Submit</button>
+                </form>
+
+                <form>
+                    <a class="forgotpasslink">Forgot your password? Click here!</a>
+                </form>
+
+                <img src="./Source/img/loglogo.png" id="norah-logo-popup">
+            </div>
+        <!---------------------------------------->
+
+    </header>
+
+    <!--///CUPOM DA LOJA///-->
+    <div id="coupon-div">
+        <a id="coupon"> First buy? 10%OFF with coupon WELCOME10. </a>
+    </div>
+    <!----------------------->
+
+    <main>
+
+        <!--///BANNER SLIDER///-->
+        <div id="slider-frontpage" class="slider">
+            <div class="slides" id="slides1">
+                <!--RADIO BUTTONS-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!----------------->
+
+                <!--SLIDE IMAGES-->
+                <div class="slide first">
+                    <img src="./Source/img/image0.jpg" alt="slideimage"/>
+                </div>
+
+                <div class="slide">
+                    <img src="./Source/img/image0 (1).jpg" alt="slideimage"/>
+                </div>
+
+                <div class="slide">
+                    <img src="./Source/img/image0 (2).jpg" alt="slideimage"/>
+                </div>
+
+                <div class="slide">
+                    <img src="./Source/img/image0 (3).jpg" alt="slideimage"/>
+                </div>
+                <!----------------->
+
+                <!--NAVIGATION AUTO-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!------------------->
+
+                <!--MANUAL NAVIGATION-->
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+
+                    <!--PREV-NEXT BUTTONS-->
+                    <div class="slide-controls">
+
+                        <button id="prev-btn">
+                            <img src="./Source/img/arrow-left.png" class="fas fa-chevron-left"></img>
+                        </button>
+                
+                        <button id="next-btn" >
+                            <img src="./Source/img/arrow-right.png" class="fas fa-chevron-right"></img>
+                        </button>
+                
+                    </div>
+                <!--------------------->
+
+            </div>
+        </div>
+        <!----------------------->
+
+        <!--///NUMBER FILTER///-->
+        <div class="number-filter">
+
+            <div class="number-filter-text">
+                <b>
+                    <strong class="strong-numberFilter">Number Filter</strong>
+                </b>
+            </div>
+
+            <div class="number-filter-numbers">
+                <ul>
+
+                    <li class="number-filterItem">
+                        <a>
+                            33
+                        </a>
+                    </li>
+
+                    <li class="number-filterItem">
+                        <a>
+                            34
+                        </a>
+                    </li>
+
+                    <li class="number-filterItem">
+                        <a>
+                            35
+                        </a>
+                    </li>
+
+                    <li class="number-filterItem">
+                        <a>
+                            36
+                        </a>
+                    </li>
+
+                    <li class="number-filterItem">
+                        <a>
+                            37
+                        </a>
+                    </li>
+
+                    <li class="number-filterItem">
+                        <a>
+                            38
+                        </a>
+                    </li>
+
+                    <li class="number-filterItem">
+                        <a>
+                            39
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <!----------------------->
+
+    </main>
+
+    <script src="./Source/js/index.js"></script>
+
+</body>
+
+</html>
