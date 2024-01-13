@@ -55,65 +55,72 @@
 
 
         <!--///BOTÃO DE FAVORITO///-->
-        <a class="favorite-link" href="#">
-            <img src="./Source/img/coração.png" class="favorite-itens" alt="hearth">
-        </a>
+        <div class="div-favoriteLink">
+            <a class="favorite-link" href="#">
+                <img src="./Source/img/coração.png" class="favorite-itens" alt="hearth">
+            </a>
+        </div>
         <!--------------------------->
 
 
         <!--///BOTÃO DO CARRINHO///-->
-        <a class="shoppingcart-link" href="#">
-            <img src="./Source/img/carrinho.png" class="shopping-itens" alt="bag">
-        </a>
+        <div class="div-shoppingcartLink">
+            <a class="shoppingcart-link" href="#">
+                <img src="./Source/img/carrinho.png" class="shopping-itens" alt="bag">
+            </a>
+        </div>
         <!--------------------------->
 
 
         <!--///JANELA POPUP LOGIN E REGISTRO///-->
-            <div class="popup-menu" aria-labelledby="triggerId" id="popupMenu">
+        <div class="popup-menu" aria-labelledby="triggerId" id="popupMenu">
 
-                <div class="change-logreg">
-                    <button class="log-change">Log in</button>
+            <div class="change-logreg">
+                <button class="log-change">Log in</button>
                     <p id="barlog-reg">|</p>
-                    <button class="reg-change">Register</button>
+                <button class="reg-change">Register</button>
+            </div>
+
+            <form class="form-log">
+        
+                <div class="popup-log-div1">
+                    <label for="email" class="label-log1"></label>
+                    <input class="popup-log1" type="email" id="email" placeholder="E-mail" required>
                 </div>
 
-                <form class="form-log">
-                    <div class="popup-log-div1">
-                        <label for="email" class="label-log1"></label>
-                        <input class="popup-log1" type="email" id="email" placeholder="E-mail" required>
-                    </div>
+                <div class="popup-log-div2">
+                    <label for="password" class="label-log2"></label>
+                    <input class="popup-log2" type="password" id="password" placeholder="Password" required>
+                </div>
 
-                    <div class="popup-log-div2">
-                        <label for="password" class="label-log2"></label>
-                        <input class="popup-log2" type="password" id="password" placeholder="Password" required>
-                    </div>
+                <input id="show-password" type="checkbox" name="passwordcheckbox">
+                <label for="passwordcheckbox" class="password-label">Show password</label>
 
-                    <input id="show-password" type="checkbox" name="passwordcheckbox">
-                    <label for="passwordcheckbox" class="password-label">Show password</label>
+                <input id="email-promo-checkbox" type="checkbox" name="promocheckbox">
+                <label for="promocheckbox" class="promo-label">Do you want to receive promo e-mails?</label>
+                <button type="submit" class="btnsubmit">Submit</button>
 
-                    <input id="email-promo-checkbox" type="checkbox" name="promocheckbox">
-                    <label for="promocheckbox" class="promo-label">Do you want to receive promo e-mails?</label>
+            </form>
 
-                    <button type="submit" class="btnsubmit">Submit</button>
-                </form>
+            <form>
+                <a class="forgotpasslink">Forgot your password? Click here!</a>
+            </form>
 
-                <form>
-                    <a class="forgotpasslink">Forgot your password? Click here!</a>
-                </form>
+            <img src="./Source/img/loglogo.png" id="norah-logo-popup">
 
-                <img src="./Source/img/loglogo.png" id="norah-logo-popup">
-            </div>
+        </div>
         <!---------------------------------------->
 
     </header>
 
-    <!--///CUPOM DA LOJA///-->
-    <div id="coupon-div">
-        <a id="coupon"> First buy? 10%OFF with coupon WELCOME10. </a>
-    </div>
-    <!----------------------->
 
     <main>
+
+            <!--///CUPOM DA LOJA///-->
+            <div id="coupon-div">
+                <a id="coupon"> First buy? 10%OFF with coupon WELCOME10. </a>
+            </div>
+            <!----------------------->
 
         <!--///BANNER SLIDER///-->
         <div id="slider-frontpage" class="slider">
@@ -183,7 +190,7 @@
 
             <div class="number-filter-text">
                 <b>
-                    <strong class="strong-numberFilter">Number Filter</strong>
+                    <strong class="strong-numberFilter">FILTER BY NUMBER</strong>
                 </b>
             </div>
 
@@ -254,63 +261,93 @@
         <div class="div-tag">
             <div class="div-tagbtn">
 
+                <!--BUTTON1-->
                 <button class="btn-tag" onmouseover="showContent('content1')" onmouseout="hideContent('content1')">
-                    <a>
-                        <span class="tag-text1">FIRST</span>
-                        <br>
-                        <strong id="tag-textst1">EXCHANGE IS FREE</strong>
-                    </a>
+
+                    <div class="div-tagtext">
+                        <a>
+                            <span class="tag-text1">FIRST</span>
+                            <br>
+                            <strong id="tag-textst1">EXCHANGE IS FREE</strong>
+                        </a>
+                    </div>
+
+
+                    <img src="./Source/img/exchangeFree.png" id="img-tag1">
 
                     <div class="item-content" id="content1">
                         There are no costs for the first online exchange. If it is necessary to exchange again, shipping is the customer's responsibility. The product must be sent with the original packaging, invoice, accessories, and manuals received.
                     </div>
+
                 </button>
-        
+                <!----------->
+
+                <!--BUTTON2-->
                 <button class="btn-tag" onmouseover="showContent('content2')" onmouseout="hideContent('content2')">
-                    <a>
-                        <strong id="tag-textst2">OFFICIAL GROUP</strong>
-                        <br>
-                        <span class="tag-text1">JOIN</span>
-                    </a>
+
+                    <div class="div-tagtext">
+                        <a>
+                            <strong id="tag-textst2">OFFICIAL GROUP</strong>
+                            <br>
+                            <span class="tag-text1">JOIN</span>
+                        </a>
+                    </div>
+
+                    <img src="./Source/img/groupimg.png" id="img-tag2">
 
                     <div class="item-content" id="content2">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores mollitia illum corporis, molestias officia nostrum impedit ex vero animi dicta possimus harum hic? Non, ex excepturi ad possimus laudantium dolore!
                     </div>
+
                 </button>
+                <!----------->
         
+                <!--BUTTON3-->
                 <button class="btn-tag" onmouseover="showContent('content3')" onmouseout="hideContent('content3')">
-                    <a>
-                        <strong id="tag-textst3">VISIT</strong>
-                        <br>
-                        <span class="tag-text1">OUR BLOG</span>
-                    </a>
+
+                    <div class="div-tagtext">
+                        <a>
+                            <strong id="tag-textst3">OUR OFFICIAL BLOG</strong>
+                            <br>
+                            <span class="tag-text3">VISIT</span>
+                        </a>
+                    </div>
+
+                    <img src="./Source/img/blog.png" id="img-tag3">
 
                     <div class="item-content" id="content3">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur culpa quidem velit omnis quaerat reprehenderit eaque deleniti? Fugiat reprehenderit necessitatibus eius facere quidem provident maxime exercitationem quam perferendis, illum aspernatur.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae dolorum porro veritatis tenetur doloremque quae, voluptatum commodi ea, omnis magnam ullam, vel dolorem nisi voluptate dolores! Explicabo, ipsam aspernatur!
                     </div>
+
                 </button>
+                <!---------->
 
             </div>
         </div>
         <!------------------------>
 
         <!-- ///OPPORTUNITIES/// -->
+        <div class="box-opportunities box1">
+            <a href="" class="link-opportunities">
+                <img src="./Source/img/blackshoe.png" alt="Shoe-image" id="middle1">
+            </a>
+        </div>
+
         <div class="box-opportunities">
-            <a href="">
-                <img src="" alt="Shoe-image" id="middle1">
+            <a href="" class="link-opportunities">
+                <img src="./Source/img/opportunities.webp" alt="Link-opportunities" id="middle2">
             </a>
         </div>
 
-        <div>
-            <a href="">
-                <img src="" alt="Link-opportunities" id="middle2">
+        <div class="box-opportunities">
+            <a href="" class="link-opportunities">
+                <img src="./Source/img/greenshoe.png" alt="Shoes-image" id="middle3">
             </a>
         </div>
+        <!------------------------>
 
-        <div>
-            <a href="">
-                <img src="" alt="Shoes-image" id="middle3">
-            </a>
+        <div class="more">
+            
         </div>
 
     </main>
