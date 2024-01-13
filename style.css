@@ -19,7 +19,7 @@ header {
     left: 0;
     width: 100%;
     height: 110px;
-    background-color: #4b4949;
+    background-color: black;
     display: inline-block;
 }
 
@@ -29,6 +29,13 @@ header {
 
 /* ///LOGO/// */
 
+#div-logo {
+    width: 400px;
+    height: 80px;
+    position: relative;
+    top: 15px;
+}
+
 .link-logo {
     width: 0px;
     height: 55px;
@@ -37,11 +44,10 @@ header {
 }
 
 .logo {
-    width: 230px;
-    height: 45px;
+    width: 400px;
+    height: 80px;
     position: relative;
-    left: 10%;
-    top: 12px;
+    left: 25%;
 }
 
 /* ---------------- */
@@ -53,28 +59,29 @@ header {
 
 .search-box {
     margin: 0 auto;
-    position: relative;
+    position: absolute;
+    width: 100%;
     height: 30px;
-    width: 700px;
-    bottom: 20px;
-    border-bottom: 2px solid #f4c1b7;
+    bottom: 55px;
 }
 
 #textsearch {
     box-sizing: border-box;
-    width: 550px;
+    width: 700px;
     height: 30px;
     border-color: transparent;
     outline: 0;
-    background: 0 0;
-    color: #f4c1b7;
+    background: transparent;
+    position: relative;
+    left: 600px;
+    color: #f5ece3;
     font-weight: 200;
     font-size: 14px;
-
+    border-bottom: 2px solid #f5ece3;
 }
 
 #textsearch::placeholder {
-    color: #f4c1b7;
+    color: #f5ece3;
     font-weight: 200;
     font-size: 14px;
 }
@@ -85,7 +92,7 @@ header {
     cursor: pointer;
     background-color: transparent;
     position: relative;
-    left: 120px;
+    left: 30%;
     bottom: 2px;
 }
 
@@ -96,22 +103,135 @@ header {
 
 /* ///ABAS HEADER/// */
 
+#div-headerbuttons {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: 6px;
+}
+
 .header-buttons {
-    position: relative;
+    position:relative;
     background-color: transparent;
     border: none;
-    font-size: 13px;
-    font-weight: 700;
-    color: #f4c1b7;
+    font-size: 15px;
+    font-weight: 300;
+    color: #f5ece3;
     font-family: "Josefin Sans", Arial, sans-serif;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-left: 30px;
-    left: 3.5%;
     outline: 0;
     opacity: 1;
     height: 10px;
     display: inline;
+}
+
+#home-button::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0px;
+    background-color: #f5ece3;
+    transition: width 0.1s ease-in-out;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+#home-button:hover::after {
+    width: 25px;
+    left: 50%;
+}
+
+#news-button::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0px;
+    background-color: #f5ece3;
+    transition: width 0.1s ease-in-out;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+#news-button:hover::after {
+    width: 25px;
+    left: 50%;
+}
+
+#shoes-button::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0px;
+    background-color: #f5ece3;
+    transition: width 0.1s ease-in-out;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+#shoes-button:hover::after {
+    width: 25px;
+    left: 50%;
+}
+
+#collections-button::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0px;
+    background-color: #f5ece3;
+    transition: width 0.1s ease-in-out;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+#collections-button:hover::after {
+    width: 25px;
+    left: 50%;
+}
+
+#outlet-button::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0px;
+    background-color: #f5ece3;
+    transition: width 0.1s ease-in-out;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+#outlet-button:hover::after {
+    width: 25px;
+    left: 50%;
+}
+
+#sale-button::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0px;
+    background-color: #f5ece3;
+    transition: width 0.1s ease-in-out;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+#sale-button:hover::after {
+    width: 25px;
+    left: 50%;
+}
+
+.header-buttons:not(:last-child) {
+    margin-right: 40px;
 }
 
 
@@ -143,7 +263,7 @@ header {
 }
 
 .btn {
-    color: #f4c1b7;
+    color: #f5ece3;
     background-color: transparent;
     position: relative;
     cursor: pointer;
@@ -155,16 +275,16 @@ header {
     display: block;
     height: 3px;
     width: 0;
-    background-color: #f4c1b7;
+    background-color: #f5ece3;
     transition: width 0.3s ease-in-out;
     position: relative;
     transform: translateX(-50%);
-    left: 25px;
+    left: 50%;
 }
 
 .btn:hover::after {
     width: 55px;
-    left: 25px;
+    left: 50%;
 }
 
 .btn-secondary {
@@ -176,7 +296,7 @@ header {
 
 .btn-secondary:hover {
     border-radius: 0;
-    color: #f4c1b7;
+    color: #f5ece3;
     opacity: 0.8;
 }
 
@@ -186,7 +306,7 @@ header {
 
 #buttonLog {
     background-color: transparent;
-    color: #f4c1b7;
+    color: #f5ece3;
     text-align: justify;
     bottom: 10px;
     height: 45px;
@@ -213,16 +333,16 @@ header {
 
 .div-favoriteLink {
     margin: 0 auto;
-    background-color: red;
-    position: relative;
-    bottom: 9px;
+    width: 30px;
+    height: 28px;
+    bottom: 6px;
+    position: absolute;
+    left: 90%;
 }
 
 .favorite-link {
     cursor: pointer;
     margin-bottom: 0;
-    position: absolute;
-    left: 90%;
     height: 1px;
     justify-content: center;
 }
@@ -230,8 +350,6 @@ header {
 .favorite-itens {
     width: 30px;
     height: 28px;
-    bottom: 15px;
-    position: relative;
 }
 
 .favorite-link::after {
@@ -239,12 +357,12 @@ header {
     display: block;
     height: 3px;
     width: 0;
-    background-color: #f4c1b7;
+    background-color: #f5ece3;
     transition: width 0.3s ease-in-out;
-    position: absolute;
-    top: 17px;
-    left: 50%;
+    position: relative;
     transform: translateX(-50%);
+    left: 50%;
+    top: 3px;
   }
 
 .favorite-link:hover::after {
@@ -269,15 +387,15 @@ header {
 
 .div-shoppingcartLink {
     margin: 0 auto;
-    background-color: red;
-    position: relative;
+    width: 30px;
+    height: 28px;
     bottom: 9px;
+    position: absolute;
+    left: 93%;
 }
 
 .shoppingcart-link {
     cursor: pointer;
-    position: absolute;
-    left: 93%;
     height: 1px;
     justify-content: center;
 }
@@ -285,24 +403,24 @@ header {
 .shopping-itens {
     width: 30px;
     height: 32px;
-    position: relative;
-    bottom: 18px;
 }
 
 .shoppingcart-link::after {
     content: "";
+    display: block;
     height: 3px;
     width: 0;
-    background-color: #f4c1b7;
+    background-color: #f5ece3;
     transition: width 0.3s ease-in-out;
-    position: absolute;
-    left: 50%;
-    top: 17px;
+    position: relative;
     transform: translateX(-50%);
+    left: 50%;
+    top: 2px;
   }
 
 .shoppingcart-link:hover::after {
     width: 40px;
+    left: 50%;
   }
 
 .shoppingcart-link:hover {
@@ -321,24 +439,24 @@ header {
 /* ///JANELA POPUP LOGIN E REGISTRO/// */
 
 .popup-menu{
-    background-color: #4b4949;
+    background-color: #f5ece3;
     width: 800px;
     height: 450px;
     z-index: 2;
-    position: absolute;
+    position: fixed;
     left: 50%;
     transform: translate(-50%, 25%);
-    border-radius: 50px;
+    border-radius: 30px;
     display: none;
 }
 
 #barlog-reg {
-    color: #f4c1b7;
+    color: black;
     font-size: 50px;
     font-weight: lighter;
     position: absolute;
-    left: 175px;
-    top: 20px;
+    left: 185px;
+    top: 22px;
     cursor: pointer;
     z-index: 2;
 }
@@ -347,11 +465,11 @@ header {
     width: 100px;
     background-color: transparent;
     position: absolute;
-    left: 70px;
+    left: 80px;
     top: 40px;
     border: none;
     font-size: 30px;
-    color: #f4c1b7;
+    color: black;
 }
 
 .log-change::after {
@@ -359,7 +477,7 @@ header {
     display: block;
     height: 3.5px;
     width: 0;
-    background-color: #f4c1b7;
+    background-color: black;
     transition: width 0.3s ease-in-out;
     position: relative;
     transform: translateX(-50%);
@@ -375,12 +493,12 @@ header {
     width: 100px;
     background-color: transparent;
     position: absolute;
-    left: 190px;
+    left: 200px;
     top: 40px;
     border: none;
     width: 130px;
     font-size: 30px;
-    color: #f4c1b7;
+    color: black;
 }
 
 .reg-change::after {
@@ -388,7 +506,7 @@ header {
     display: block;
     height: 3.5px;
     width: 0;
-    background-color: #f4c1b7;
+    background-color: black;
     transition: width 0.3s ease-in-out;
     position: relative;
     transform: translateX(-50%);
@@ -415,23 +533,25 @@ header {
     left: 50px;
     width: 300px;
     height: 30px;
+    outline: none;
 }
 
 .label-log1 {
-    color: white;
+    color: black;
 }
 
 .popup-log1 {
     outline: 0;
     width: 300px;
     position: absolute;
-    background: 0 0;
-    border-color: transparent;
-    color: #f4c1b7;
+    background: transparent;
+    border: transparent;
+    color: black;
+    border-bottom: 2px solid black;
 }
 
 .popup-log1::placeholder {
-    color: #f4c1b7;
+    color: black;
 }
 
 .popup-log-div2 {
@@ -440,23 +560,25 @@ header {
     left: 50px;
     width: 300px;
     height: 30px;
+    outline: none;
 }
 
 .label-log2 {
-    color: white;
+    color: #f5ece3;
 }
 
 .popup-log2 {
     outline: 0;
     width: 300px;
     position: absolute;
-    background: 0 0;
-    border-color: transparent;
-    color: #f4c1b7;
+    border: transparent;
+    background:transparent;
+    color: black;
+    border-bottom: 2px solid black;
 }
 
 .popup-log2::placeholder {
-    color: #f4c1b7;
+    color: black;
 }
 
 #show-password {
@@ -498,17 +620,18 @@ header {
 
 .btnsubmit {
     position: relative;
-    top: 280px;
+    top: 300px;
     left: 150px;
     border-radius: 10px;
     border: 0;
-    background-color: #ee826d;
+    background-color: black;
     width: 100px;
     height: 30px;
+    color: #f5ece3;
 }
 
 .btnsubmit:hover {
-    box-shadow: 1px 1px 1px 1px #f4c1b7;
+    box-shadow: 1px 1px 7px 0px black;
 }
 
 .btnsubmit:active {
@@ -519,12 +642,12 @@ header {
     text-decoration: none;
     position: relative;
     top: 340px;
-    left: 50px;
+    left: 75px;
     cursor: pointer;
     color: black;
     position: absolute;
     font-size: 17px;
-    font-weight: lighter;
+    margin-top: 30px;
 }
 
 .forgotpasslink:hover {
@@ -536,7 +659,7 @@ header {
 }
 
 .form-log {
-    border-right: 4px solid #f4c1b7;
+    border-right: 4px solid black;
     width: 410px;
     height: 450px;
 }
@@ -557,7 +680,7 @@ header {
 /* ///CUPOM DE DESCONTO/// */
 
 #coupon-div {
-    background-color: #ee826d;
+    background-color: #f5ece3;
     width: 100%;
     height: 50px;
     text-align: center;
@@ -584,7 +707,7 @@ header {
     cursor: pointer;
     animation: blink 1s infinite;
     text-decoration: none;
-    color: rgba(198, 14, 1, 0.993);
+    color: red;
 }
 
 /*----------------------*/
@@ -594,7 +717,7 @@ header {
 
 
 main {
-    height: 2000px;
+    height: 3000px;
 }
 
 /* ///SLIDER BANNER/// */
@@ -758,13 +881,13 @@ main {
 /* ///NUMBER FILTER/// */
 
 .number-filter {
-    background-color: #4b4949;
-    color: #ee826d;
+    background-color: black;
+    color: #f5ece3;
     height: 40px;
     width: 100%;
     padding: 22px;
     justify-content: center;
-    letter-spacing: 4px;
+
     font-family: "Josefin Sans", Arial, sans-serif;
 }
 
@@ -773,10 +896,11 @@ main {
     width: 300px;
     position: relative;
     bottom: 13px;
-    left: 27%;
+    left: 28%;
     font-size:19px;
     font-weight: 200;
     font-family: "Josefin Sans", Arial, sans-serif;
+    letter-spacing: 4px;
 }
 
 .strong-numberFilter {
@@ -786,22 +910,24 @@ main {
 
 .number-filter-numbers {
     background-color: transparent;
-    width: 30%;
+    width: 40%;
+    height: 35px;
     position: relative;
-    left: 50%;
+    left: 55%;
     bottom: 48px;
+    font-weight: 400;
 }
 
 .number-filterItem {
-    width: auto;
+    width: 40px;
     height: auto;
     display: inline-block;
     list-style: none;
     align-items: center;
-    color: #ee826d;
-    position: relative;
-    padding: 5px 3px 5px 6px;
+    color: #f5ece3;
     cursor: pointer;
+    text-align: center;
+    padding: 5px 0;
 }
 
 .number-filterItem:not(:last-child) {
@@ -810,7 +936,7 @@ main {
 
 .number-filterItem:hover {
     color: black;
-    background-color: #ee826d;
+    background-color: #f5ece3;
 }
 
 /*-------------------*/
@@ -822,10 +948,11 @@ main {
 /* ///TAG FRONTPAGE/// */
 
 .div-tag {
-    background-color: transparent;
     width: 100%;
     height: 180px;
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .div-tagbtn {
@@ -839,9 +966,10 @@ main {
 .btn-tag {
     width: 320px;
     height: 60px;
-    background-color: #f4c1b7;
-    border: 1px solid #4b4949;
-    box-shadow: 2px 2px 2px 1px #4b4949;
+    background-color: #f5ece3;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 1px #e4e7f0;
     display: inline;
     font-size: smaller;
     letter-spacing: 1px;
@@ -852,14 +980,10 @@ main {
 }
 
 .btn-tag:hover {
-    box-shadow: 3px 3px 4px 2px #4b4949;
+    box-shadow: 3px 3px 4px 2px #979797;
 }
 
 .btn-tag:hover strong {
-    color: #ee826d;
-}
-
-#tag-textst1:hover, #tag-textst2:hover, #tag-textst3:hover {
     color: #ee826d;
 }
 
@@ -871,17 +995,18 @@ main {
     right: 0;
     top: 70px;
     margin: 0 auto;
-    padding: 20px 60px;
+    padding: 25px 80px;
     letter-spacing: initial;
     line-height: initial;
     width: 60%;
     font-size: 16px;
     background: #fff;
-    color: #5f5e5e;
+    color: black;
     z-index: 99;
     text-align: center;
     transition: visibility .4s linear,opacity .4s linear;
     box-shadow: 1px 3px 22px 1px #e4e7f0;
+    border-radius: 4px;
 }
 
 #img-tag1 {
@@ -919,7 +1044,8 @@ main {
 /* ///OPPORTUNITIES/// */
 
 .box-opportunities {
-    background-color: red;
+    display: flex;
+    justify-content: center;
     width: 380px;
     display: inline-block;
     margin: 0 10px;
@@ -928,13 +1054,161 @@ main {
 
 .box1 {
     margin-left: 19%;
-    height: 380px;
 }
 
 .link-opportunities {
-    background-color: blue;
     width: auto;
     height: 100px;
 }
 
-/*-------------------*/
+#box-opportunitiesL {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    margin-top: 20px;
+}
+
+#box-opportunitiesL img {
+    display: flex;
+    position: relative;
+    left: 4px;
+    width: 1189px;
+    height: 300px;
+}
+
+/*----------------------*/
+
+
+
+
+
+/* ///NEWS E-MAIL/// */
+
+.div-newsEmail {
+    width: 100%; 
+    height: 150px;
+    margin: 20px 0 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.news-email {
+    background-color: black;
+    width: 80%;
+    border-radius: 4px;
+}
+
+.news-span {
+    color: #f5ece3;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+.div-inputnews {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    top: 35%;
+}
+
+.text-newsEmail {
+    width: 340px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #f5ece3;
+    outline: none;
+    color: #f5ece3;
+    position: relative;
+    margin-right: 20px;
+    padding: 0 0 0 10px;
+}
+
+.text-newsEmail::placeholder {
+    color: #f5ece3;
+    font-weight: 400;
+}
+
+#text-newsEmail3 {
+    width: 100px;
+    height: 40px;
+    outline: none;
+    margin-right: 20px;
+    background-color: transparent;
+    border: 2px solid #f5ece3;
+    color: #f5ece3;
+    padding: 0;
+}
+
+#sizeShoe {
+    display: none;
+}
+
+.sizeShoe-op {
+    background-color: black;
+    color: #f5ece3;
+    text-align: center;
+    font-size: 17px;
+}
+
+#text-newsEmail4 {
+    width: 100px;
+    height: 40px;
+    background-color: #f5ece3;
+    color: black;
+    font-weight: 600;
+    padding: 0;
+    border: none;
+    border-radius: 4px;
+}
+
+#text-newsEmail4:hover {
+    opacity: 0.9;
+}
+#text-newsEmail4:active {
+    opacity: 0.5;
+}
+
+/*-----------------*/
+
+
+
+
+
+/* ///FIND OUT MORE/// */
+
+#moreabout1 {
+    width: 100%; 
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#as {
+    cursor: pointer;
+    width: 80%;
+    outline: none;
+}
+
+
+#moreabout2 {
+    background-color: black;
+    border-radius: 4px;
+    height: 30px;
+}
+
+#moreaboutnora {
+    color: #f5ece3;
+    position: relative;
+    top: 4px;
+    height: 30px;
+    outline: none;
+    letter-spacing: 1px;
+}
+
