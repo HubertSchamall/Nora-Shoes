@@ -31,23 +31,23 @@ header {
 
 #div-logo {
     width: 400px;
-    height: 80px;
+    height: 60px;
     position: relative;
-    top: 15px;
+    top: 25px;
+    left: 5%;
 }
 
 .link-logo {
-    width: 0px;
-    height: 55px;
+    width: 400px;
+    height: 60px;
     cursor: pointer;
     outline: none;
 }
 
 .logo {
     width: 400px;
-    height: 80px;
+    height: 60px;
     position: relative;
-    left: 25%;
 }
 
 /* ---------------- */
@@ -260,6 +260,7 @@ header {
 
 .btn,.btn-secondary{
     border-radius: 0;
+
 }
 
 .btn {
@@ -268,6 +269,7 @@ header {
     position: relative;
     cursor: pointer;
     border-radius: 0;
+    outline: none;
 }
 
 .btn::after {
@@ -345,11 +347,14 @@ header {
     margin-bottom: 0;
     height: 1px;
     justify-content: center;
+    outline: none;
 }
 
 .favorite-itens {
     width: 30px;
     height: 28px;
+    position: relative;
+    bottom: 1px;
 }
 
 .favorite-link::after {
@@ -398,11 +403,14 @@ header {
     cursor: pointer;
     height: 1px;
     justify-content: center;
+    outline: none;
 }
 
 .shopping-itens {
     width: 30px;
     height: 32px;
+    position: relative;
+    bottom: 1px;
 }
 
 .shoppingcart-link::after {
@@ -980,7 +988,7 @@ main {
 }
 
 .btn-tag:hover {
-    box-shadow: 3px 3px 4px 2px #979797;
+    box-shadow: 3px 3px 4px 2px #acabab;
 }
 
 .btn-tag:hover strong {
@@ -1061,6 +1069,13 @@ main {
     height: 100px;
 }
 
+#id-opportunities4 {
+    position: relative;
+    left: 4px;
+    width: 1189px;
+    height: 300px;
+}
+
 #box-opportunitiesL {
     width: 100%;
     display: flex;
@@ -1071,8 +1086,6 @@ main {
 
 #box-opportunitiesL img {
     display: flex;
-    position: relative;
-    left: 4px;
     width: 1189px;
     height: 300px;
 }
@@ -1107,6 +1120,7 @@ main {
     top: 20px;
     letter-spacing: 4px;
     font-size: 20px;
+    font-weight: 200;
 }
 
 .div-inputnews {
@@ -1189,8 +1203,10 @@ main {
     display: flex;
     text-align: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
-#as {
+
+#link-moreabout {
     cursor: pointer;
     width: 80%;
     outline: none;
@@ -1210,5 +1226,237 @@ main {
     height: 30px;
     outline: none;
     letter-spacing: 1px;
+    font-weight: 200;
 }
 
+/*-----------------------*/
+
+
+
+
+
+/* ///SAZONAL/// */
+
+.box-sazonal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 570px;
+}
+
+.box-sazonal2:not(:last-child) {
+    margin-right: 20px;
+}
+
+.link-sazonal {
+    width: auto;
+    height: 100px;
+}
+
+#sazonal1 {
+    width: 550px;
+    height: 570px;
+}
+
+#sazonal2 {
+    width: 840px;
+    height: 570px;
+}
+
+.box-moreproducts {
+    margin: 70px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#link-moreproduct {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #f5ece3;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 150px;
+    font-size: 20px;
+    font-weight: 200;
+    opacity: 1;
+    transition: opacity 2 ease;
+    outline: none;
+    box-shadow: 2px 2px 2px 1px #e4e7f0;
+}
+
+#link-moreproduct:hover {
+    opacity: 0.9;
+    box-shadow: 3px 3px 4px 2px #acabab;
+}
+
+#link-moreproduct:active {
+    opacity: 0.7;
+}
+
+/*--------------------------------*/
+
+
+
+
+
+/* ///FOOTER/// */
+
+
+/* logo footer */
+
+#footer {
+    width: 100%;
+    height: 750px;
+}
+
+#logo-footer {
+    width: 100%;
+    height: 85px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#logo-footer img {
+    width: 350px;
+    height: 60px;
+    position: relative;
+    top: 12.5px;
+}
+
+/* informations footer */
+
+#footer-info {
+    background-color: #f5ece3;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.div-textfooter {
+    width: 250px;
+    height: 280px;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.div-textfooter:not(:last-child) {
+    margin-right: 20px;
+}
+
+.h4-footer {
+    display: block;
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.rocket {
+    background-color: #ee826d;
+    width: 25px;
+    height: 4px;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    top: -4px;
+}
+
+.footer-text {
+    list-style: none;
+    font-size: 17px;
+    margin: 5px 10px;
+}
+
+.link-footer {
+    text-decoration: none;
+    color: black;
+}
+
+.link-footer:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* footer info 2 */
+
+#footer-info2 {
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    display: inline-block;
+}
+
+.footer-socials {
+    display: inline-block;
+    width: 300px;
+    height: 25px;
+    font-size: 17px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: #f5ece3;
+    position: relative;
+    top: 62.5px;
+    left: 351.5px;
+}
+
+.footer-socials:not(:last-child) {
+    margin-right: 200px;
+}
+
+.rocket2 {
+    background-color: #ee826d;
+    width: 25px;
+    height: 4px;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    top: -4px;
+}
+
+.link-footer2 {
+    text-decoration: none;
+    color: #f5ece3;
+    cursor: pointer;
+}
+
+.link-footer2:hover {
+    opacity: 0.8;
+}
+
+/* text about nora */
+
+#div-textaboutNoraFooter {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+#textaboutNora1 {
+    margin: 0 auto;
+    font-size: 15px;
+    position: relative;
+    top: 15px;
+    font-weight: bold;
+}
+
+#textaboutNora2 {
+    margin: 0 auto;
+    width: 70%;
+    font-size: 15px;
+    position: relative;
+    font-weight: 400;
+    top: 25px;
+}
+
+/* colab */
+
+#colab {
+    background-color: black;
+    width: 100%;
+    height: 65px;
+}
