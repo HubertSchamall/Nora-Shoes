@@ -230,6 +230,23 @@ header {
     left: 50%;
 }
 
+#gift-button::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0px;
+    background-color: #f5ece3;
+    transition: width 0.1s ease-in-out;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+#gift-button:hover::after {
+    width: 25px;
+    left: 50%;
+}
+
 .header-buttons:not(:last-child) {
     margin-right: 40px;
 }
@@ -240,7 +257,8 @@ header {
 #shoes-button:hover,
 #collections-button:hover,
 #outlet-button:hover,
-#sale-button:hover {
+#sale-button:hover,
+#gift-button:hover {
     opacity: 0.7;
     cursor: pointer;
 }
