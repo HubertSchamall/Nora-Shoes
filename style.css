@@ -263,6 +263,17 @@ header {
     cursor: pointer;
 }
 
+#home-button:active,
+#news-button:active,
+#shoes-button:active,
+#collections-button:active,
+#outlet-button:active,
+#sale-button:active,
+#gift-button:active {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 /* ------------------- */
 
 
